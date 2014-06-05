@@ -3,7 +3,7 @@
       <div class="container">
         <div class="row">
          <div class="col-md-4">
-      <a href="/index.php"><img src="/media/sciserver.png" class="img-responsive" alt="sciserverlogo"></a>
+      <a href="/index.php"><img src="/wp-content/uploads/2014/04/sciserver.png" class="img-responsive" alt="sciserverlogo"></a>
     </div>
     <div class="col-md-4 col-md-offset-4">
            <p class="lead">Collaborative data-driven science</p>
