@@ -23,7 +23,16 @@ var Roots = {
   common: {
     init: function() {
       // JavaScript to be fired on all pages
-      $('body').scrollspy({ target: '#sidebar' });
+      // $('body').scrollspy({ target: '#sidebar' });
+      $('body').scrollspy({ target: '.bs-docs-sidebar' });
+    $('.bs-docs-sidebar').affix({
+    offset: {
+      top: 150,
+      bottom: function () {
+           return (this.bottom === $('.footer').outerHeight(true));
+      }
+    }
+  });
     }
   },
   // Home page
@@ -42,7 +51,8 @@ var Roots = {
   goals_objectives: {
     init: function () {
       // JavaScript to be fired on the Goals & Objectives page
-  $('#foo').affix({
+  // $('#sidebar').affix({
+    $('.bs-docs-sidebar').affix({
     offset: {
       top: 100,
       bottom: function () {
