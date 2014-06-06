@@ -23,6 +23,7 @@ var Roots = {
   common: {
     init: function() {
       // JavaScript to be fired on all pages
+      $('body').scrollspy({ target: '#sidebar' });
     }
   },
   // Home page
@@ -35,6 +36,20 @@ var Roots = {
   about_us: {
     init: function() {
       // JavaScript to be fired on the about us page
+    }
+  },
+// Goals & Objectives page, note the change from about-us to about_us.
+  goals_objectives: {
+    init: function () {
+      // JavaScript to be fired on the Goals & Objectives page
+  $('#foo').affix({
+    offset: {
+      top: 100,
+      bottom: function () {
+           return (this.bottom === $('.footer').outerHeight(true));
+      }
+    }
+  });
     }
   }
 };
